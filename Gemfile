@@ -1,7 +1,10 @@
-# A sample Gemfile
+
 source "https://rubygems.org"
 
-gem 'shotgun'
-gem 'pry'
-gem 'sinatra'
+gem "sinatra"
+gem "shotgun"
+gem "httparty"
 
+group :development do
+  gem "pry"
+end
