@@ -12,4 +12,10 @@ class ApplicationController < Sinatra::Base
     
     return erb :index
   end
+  
+  post '/results' do
+    @month
+    @birthstone = choose_gem(@month)
+    return erb :results
+  end
 end
