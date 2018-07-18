@@ -14,8 +14,8 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/results' do
-    @month 
+    @month = params["birthMonth"]
     @birthstoneChoice = choose_gem(@month)
     return erb :results
-  end
+  end 
 end
